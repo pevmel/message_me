@@ -12,5 +12,13 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require jquery
 //= require turbolinks
+//= require semantic-ui
+//= require semantic-ui/modal
+//= require semantic-ui/dropdown
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+  $('.ui.dropdown').dropdown();
+})
